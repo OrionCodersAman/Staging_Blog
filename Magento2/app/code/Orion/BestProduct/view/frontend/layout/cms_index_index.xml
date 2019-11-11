@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="content">
+			<container name="slider.container" as="slider.container" htmlTag="div" htmlClass="container">
+				<block class="Orion\BestProduct\Block\DisplayProduct" name="helloworld_display" template="Orion_BestProduct::sayhello.phtml">
+					<block class="Orion\Addtobtn\Block\addtobtn" name="addtobtn_funct" />
+				</block>
+			</container>
+		</referenceContainer> 
+		
+	</body>
+</page>

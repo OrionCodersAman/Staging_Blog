@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="mage/gallery/gallery.css"/>
+        <css src="Magento_Catalog/css/_gallery.css"/>
+        <script src='Magento_Catalog/js/stickyheader.js' />
+    </head>
+    <update handle="catalog_product_opengraph" />
+    <update handle="page_calendar"/>
+    <body>
+        <referenceBlock  name="product.info.options.default">
+              <block class="Orion\Addtobtn\Block\addtobtn" name="addtobtn_funct" />
+         </referenceBlock>
+         <referenceContainer name="product.info.main">
+            <block class="Magento\Framework\View\Element\Template" name="custom.text" template="Magento_Catalog::view/customtext.phtml" after="product.info.price"/>
+         </referenceContainer>
+
+
+        
+        <move element="header.content" destination="header-wrapper" />
+    </body>
+</page>

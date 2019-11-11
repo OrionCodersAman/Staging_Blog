@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page-wrapper">
+            <container name="header.content" as="header.container" htmlTag="div" htmlClass="my-menu" />
+            <block name="banner" template="Magento_Theme::html/banner.phtml" />
+        </referenceContainer>
+        <move element="link" destination="header.panel" />
+        <move element="banner" destination="slider.container" before="helloworld_display" />
+        <move element="header.content" destination="header-wrapper" />
+       <!--  <move element="store.menu" destination="header.content" /> -->
+        <referenceBlock name="top.search" remove="true" />
+    </body>
+</page>

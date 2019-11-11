@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+     <add id="Orion_HelloMagento::menu" title="Add Slider Image" module="Orion_HelloMagento" sortOrder="10" resource="Orion_HelloMagento::create"/>
+
+         <add id="Orion_HelloMagento::menu_item" title="Main Slider" module="Orion_HelloMagento" sortOrder="10" 
+            parent="Orion_HelloMagento::menu" action="hellomagento/create/Execute" resource="Orion_HelloMagento::execute"/>
+
+        <add id="Orion_HelloMagento::menu_item2" title="Sub Slider" module="Orion_HelloMagento" sortOrder="9" 
+            parent="Orion_HelloMagento::menu" action="hellomagento/create/Index" resource="Orion_HelloMagento::index"/>
+     
+    </menu>
+</config>

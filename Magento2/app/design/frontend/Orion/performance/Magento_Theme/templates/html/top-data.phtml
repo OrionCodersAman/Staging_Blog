@@ -1,0 +1,23 @@
+<ul class="top-data-container">
+	<li class="top-data-cont">
+		<a href="#" class="fa fa-circle-o"><?php echo "A few clicks is all it takes."?></a>
+	</li>
+</ul>
+<script>
+    require([
+        'jquery'
+    ], function ($) {
+        jQuery(document).ready(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= 135) {
+                    $('header').addClass('fixed-header');
+                    $('.banner').addClass('banner-cont');
+                }
+                else {
+                    $('header').removeClass('fixed-header');
+                    $('.banner').removeClass('banner-cont');
+                }
+            });
+        });
+    });
+</script>

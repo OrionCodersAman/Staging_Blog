@@ -1,0 +1,145 @@
+
+<?php use Magento\Framework\App\Action\Action;?> 
+<div class="ul-background" id="pagecont">
+	<div class="heading-sec">
+		<h1 class="header-title">Most Viewed Products</h1>
+	</div>
+
+	<!--PRODUCT SECTION-->
+	<ul class="ul-block" id="pagecont">
+		<?php
+
+		$collection=$this->getCollection();
+
+		foreach ( $collection as $product ) {
+			$postParams = $block->getAddToCartPostParams($product);
+			 
+			$data =array( 
+				'title'     => $product->getName(),
+				'raw_price' => $product->getPrice(),
+				'product-url'=>$product->getProductUrl(),
+				'image_url' => $this->getUrl().'pub/media/catalog/product'.$product->getImage()
+			);
+
+			?>
+			<li class="li-block" >
+				 <div class="card" >
+					<div class="box">
+						<a href="<?php echo $data["product-url"];?>">
+							<img class="image" src="<?= $data["image_url"]; ?>" alt="product-image"/>
+						</a>
+					</div>
+					<strong class="card-title">
+						<?php
+						echo $data["title"];
+						?>
+				 	</strong> 
+					<div class="card-text">
+						<strong>Price :</strong>
+						<strong class="product-price">
+					<?php
+						echo $actual_price= $data["raw_price"];
+						$cut_price=$actual_price+200.0000;
+					?>
+					</strong>
+					<strong class="cut-price"><?php echo $cut_price; ?></strong>
+					</div>
+					
+  <!-- condation for login & logout of user -->
+  					<?php $addToBlock1 = $this->getChildBlock('addtobtn_funct'); 
+  						if($addToBlock1->isModuleEnabled()==1){
+  					?>
+					<form data-role="tocart-form" action="<?php /* @escapeNotVerified */ echo $postParams['action']; ?>" method="post">
+	      				<input type="hidden" name="product" value="<?php /* @escapeNotVerified */ echo $postParams['data']['product']; ?>">
+	        			<input type="hidden" name="<?php /* @escapeNotVerified */ echo Action::PARAM_NAME_URL_ENCODED; ?>" value="<?php /* @escapeNotVerified */ echo $postParams['data'][Action::PARAM_NAME_URL_ENCODED]; ?>">
+					 	<button class="btn svg">Add to cart</button>
+				 	
+					 </form>
+				 	<?php 
+				 		}
+				 	?>
+			 	</div>
+	 		</li>
+
+
+<?php } ?>
+</ul>
+</div>
+<!-- <div class="image-show">
+ <I><P class="image-show-heading">"INNOVATION THROUGH PASSION"</P></I> 
+</div> -->
+</div>
+<div class="comp-detail"><!-- company detail start -->
+	<div class="main-p-cont">
+		<div class="p-content">
+			<p class="title-txt">
+				All eyes on you.
+			</p>
+			
+			<hr style="width:70%">
+			
+			<p class="tagline-txt">
+			 “The reason it seems that price is all your customers care <br> about is that you haven’t given them anything<br> else to care about.”
+		 </p>
+	 </div>
+ </div>
+ <div class="comp-detail-left">
+	<!-- <p class="comp-profile"> company profile</p> -->
+	<div class="comp-content">
+		
+		
+	</div>
+
+</div><!-- comp-detail-left -->
+<!-- <div class="triangle"></div> -->
+
+
+
+</div><!-- company detail end -->
+<div class="galary">
+	<div class="image-container">
+
+		<div class="image-div">
+			<img src="http://m2p.local/pub/media/slider/girl-2.jpg" class="img">
+		</div>
+
+		<div class="image-div">
+			<img src="http://m2p.local/pub/media/slider/girl-3.jpg" class="img">
+		</div>
+		<div class="image-div">
+			<img src="http://m2p.local/pub/media/slider/girl-5.jpg" class="img">
+		</div>
+
+	</div>
+</div>
+<script type="text/javascript">
+	require([
+		'jquery',
+		'slick'
+		], function ($) {
+			jQuery(document).ready(function () {
+				const slider = $(".center");
+				slider
+				.slick({
+					dots: false,
+					infinite: true,
+					speed: 300,
+					slidesToShow: 1
+				});
+
+				slider.on('wheel', (function(e) {
+					e.preventDefault();
+
+					if (e.originalEvent.deltaY < 0) {
+						$(this).slick('slickNext');
+					} else {
+						$(this).slick('slickPrev');
+					}
+				}));       
+			});
+		});
+	</script>
+	<script type="text/javascript">
+
+	</script>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.panel">
+            <block name="top-data" template="Magento_Theme::html/top-data.phtml" />
+        </referenceContainer>
+        <referenceBlock name="my-account-link">
+            <arguments name="class" xsi:type="string">
+                <argument name="class" xsi:type="string">fas fa-user-circle</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="register-link">
+            <arguments>
+                <argument name="class" xsi:type="string">fas fa-user-plus top-links</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="authorization-link">
+            <arguments>
+                <argument name="class" xsi:type="string">fa fa-sign-in top-links</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="wish-list-link">
+            <arguments>
+                <argument name="class" xsi:type="string">fas fa-heart</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <container name="header.content" as="header.container" htmlTag="div" htmlId="my-menu" htmlClass="my-menu" />
+            <!--  <block name="footer" template="Magento_Theme::html/footer.phtml" /> -->
+        </referenceContainer>
+
+        <referenceContainer name="footer">
+            <block name="footer1" template="Magento_Theme::html/footer.phtml" />
+        </referenceContainer>
+        <referenceBlock  name="page.main.title" />
+        <!-- <referenceBlock name="page-footer.content.newsletter" remove="true" /> -->
+
+        <referenceBlock name="catalog.topnav">
+            <block class="Magento\Framework\View\Element\Html\Link" name="blogs-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Blogs</argument>
+                    <argument name="path" xsi:type="string" translate="true">blogs/index/displayblog/</argument>
+                    <argument name="class" xsi:type="string">level0 nav-6 category-item last level-top ui-menu-item</argument>
+                </arguments>
+            </block>    
+        </referenceBlock>
+
+        <move element="link" destination="header.panel" />
+        <move element="banner" destination="slider.container" before="helloworld_display" />
+        <!--  <move element="footer1" destination="footer"/>  -->
+        <move element="header.content" destination="header-wrapper" />
+        <move element="navigation.sections" destination="header.content" />
+        <move element="store.menu" destination="navigation.sections" />
+
+
+        <!-- Remove Fotter unnecessary block -->
+        <!-- <referenceBlock name="navigation.sections" remove="true" /> -->
+
+        <referenceBlock name="top.search" remove="true" />
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <referenceBlock name="footer_links" remove="true" />
+        <referenceBlock name="copyright" remove="true" />
+        <referenceBlock name="report.bugs" remove="true" />
+        <!-- -*- -->
+    </body>
+</page>

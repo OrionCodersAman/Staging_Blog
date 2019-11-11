@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!-- <script src="http://127.0.1.1:35729/livereload.js" src_type="url" /> -->
+        
+        <link rel="stylesheet" type="text/css" src="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" src_type="url"/>
+        <link rel="stylesheet" type="text/css" src="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" src_type="url"/>
+        <link rel="stylesheet" type="text/css" src="//fonts.googleapis.com/css?family=Montserrat" src_type="url"/>
+        <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=Oswald" src_type="url"/>
+        
+        <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=Arsenal" src_type="url"/>
+
+        <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=News+Cycle" src_type="url"/>
+        <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" src_type="url"/>
+        <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=Saira+Stencil+One" src_type="url"/>
+        <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=Titillium+Web" src_type="url"/>
+        <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=Open+Sans" src_type="url"/>
+        
+        <css src="Magento_Theme/css/source/slick.css" />
+        <css src="Magento_Theme/css/source/slick-theme.css" />
+        <css src="Magento_Theme/css/custom.css" />
+        <css src="https://fonts.googleapis.com/css?family=Scheherazade" />
+        <script src='http://kit.fontawesome.com/a076d05399.js' src_type="url" />
+        <!-- <script src='Magento_Theme/js/stickyheader.js' /> -->
+        <!--  <script src='Magento_Theme/js/responsive.js' /> -->
+    </head>
+</page>

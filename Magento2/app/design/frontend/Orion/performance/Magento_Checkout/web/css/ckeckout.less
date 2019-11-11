@@ -1,0 +1,168 @@
+@mnu_background_color: #fff;
+@cmn-txt-color:#fff;
+@background1:"back2.jpg";
+@background2:"on1.jpg";
+@image-path:"../images/slider/";
+@header-top: #000;
+@link-color: #3c3c3c;
+@font-mon:"Montserrat","Helvetica Neue",Arial,sans-serif;
+@font-osw:"Oswald",sans-serif;
+@font-Titillium: 'Titillium Web', 'Font Awesome 5 Free',sans-serif;
+@font-IBM: 'IBM Plex Mono', monospace;
+@saira:'Saira Stencil One', cursive;
+.page-main{
+	.page-title-wrapper{
+		padding-top: 20px;
+        margin: 0 auto;
+        text-align: center;
+        color: #000;
+        background-color: #022a56;
+        .page-title{
+            font-family: "Oswald",sans-serif;
+            letter-spacing: 7px;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: @cmn-txt-color
+        }
+	}
+ 	.columns{
+ 		padding-top: 5vh;
+ 		background-image: radial-gradient(#04499e 0%, #1862bc 32%, #0c3a6a 76%);
+ 		.column.main{
+ 			width: 80%;
+     		margin: 0 auto;
+            .opc-progress-bar-item{
+                span{
+                    color: @cmn-txt-color;
+                }
+
+            }
+            .step-title{
+                color: white;
+                font-size: 2vw;
+                @media (min-width: 320px)and (max-device-width : 767px){
+                    color: black;
+                    margin: 15px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: @font-mon;
+                }
+            }
+     		.form{
+     			min-width: 600px;
+			    width: 50%;
+			    // margin: 0 auto;
+			    padding: 2vw;
+			    box-shadow: 0px 2px 6px #000;
+			    background: rgba(0,0,0,0.4);
+			    // border-radius: 5%;
+                .row{
+                    .col{
+                        color: @cmn-txt-color;
+                        @media (min-width: 320px)and (max-device-width : 767px){
+                                color: #000;
+                        }
+                    }
+                }
+ 			    .fieldset{
+ 			    	color: @cmn-txt-color;
+ 			    	.legend{
+ 			    		margin-left: 0;
+ 			    		font-size: 24px;
+ 			    		font-family: @font-osw;
+ 			    		letter-spacing: 2px;
+ 			    		font-weight: 600;
+ 			    		color: @cmn-txt-color;
+ 			    	}
+ 			    	input[type="text"], input[type="password"], input[type="number"], input[type="email"], select{
+ 			    		height: 50px;
+					    border: 0px;
+					    box-shadow: 0px 0px 2px;
+ 			    		font-size: 16px;
+ 			    		// border-radius: 25px;
+ 			    		padding-left: 1.5vw;
+                        @media (min-width: 320px)and (max-device-width : 767px){
+                                border-radius: 0;
+                        }
+ 			    	}
+ 			    	.control{
+ 			    		width: 100%;
+ 			    		.password-strength-meter{
+ 			    			background-color: #0d3767;
+ 			    		}
+ 			    	}
+ 			    	.label{
+ 			    		text-align: inherit;
+ 			    		width: 8vw;
+ 			    		color: @cmn-txt-color;
+                        @media (min-width: 320px)and (max-device-width : 767px){
+                            color: #000;
+                            width: 15vw;
+                        }
+ 			    	}
+ 			    	.choice:before, .no-label:before{
+ 			    		width: 0px;
+ 			    	}
+ 			    }
+ 			    @media (min-width: 320px)and (max-device-width : 767px){
+                    background: none;
+                    min-width: 0;
+                    width: 90%;
+                    border-radius: 0;
+                    margin: 0 auto;
+                    box-shadow: none;
+                }
+     		}
+            .login-container{
+                display: grid !important;
+                .block-content{
+                    p{
+                        color: white;
+                        font-size: 1vw;
+                    }
+                }
+            }
+            .actions-toolbar{
+                margin-left: 0;
+                .primary{
+                    border-radius: 25px;
+                    height: 50px;
+                    width: 20vw;
+                    background: rgba(25, 121, 195,0);
+                    border: 1px solid @cmn-txt-color;
+                    @media (min-width: 320px)and (max-device-width : 767px){
+                        height: auto;
+                        background-color:#1979c3;
+                        margin:0;
+                        border: #1979c3;
+                    }
+                }
+                .primary:hover{
+                    background: @cmn-txt-color;
+                    color: #0a2b51;
+                    @media (min-width: 320px)and (max-device-width : 767px){
+                         background: #1979c3;
+                    }
+                }
+                .secondary{
+                    font-weight: normal;
+                    font-size: 16px;
+                    font-family: auto;
+                }
+            }
+            .opc-sidebar{
+                .amount{
+                    .price:after{
+                         content: "/-";
+                    }
+
+                }
+
+            }
+ 		}
+        @media (min-width: 320px)and (max-device-width : 767px){
+            background: none;
+        }
+ 	}	
+}

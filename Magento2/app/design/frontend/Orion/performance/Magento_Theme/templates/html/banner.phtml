@@ -1,0 +1,46 @@
+<div class="banner">
+    <!--<img src='http://m2p.local/pub/media/slider/banner.jpg' alt="Demo">-->
+        <div class="down-arrow">
+            <a href="#pagecont" class="scroll_icon icon icon-arrow-down icon-fallback-text">
+                <i class="fa fa-angle-down icon-cont"></i>
+            </a>
+        </div>
+        <div class="fade slide1">
+            <div> 
+                <img src='pub/static/frontend/Magento/blank/en_US/Orion_BestProduct/images/ss1.jpg' alt="Demo">
+                <p class="tagline-txt1">True style never dies.</p>
+            </div>
+            <div> 
+                <img src="pub/static/frontend/Magento/blank/en_US/Orion_BestProduct/images/ss2.jpg" class="img">
+                <p class="tagline-txt2">Luxury, For the Woman Who Deserves It</p>
+            </div>
+            <div> 
+                <img src="pub/static/frontend/Magento/blank/en_US/Orion_BestProduct/images/ss4.jpg" class="img">
+                <p class="tagline-txt3">The ultimate clothing to see the world in.</p>
+            </div>
+           <div> 
+                <img src="pub/static/frontend/Magento/blank/en_US/Orion_BestProduct/images/ss5.jpg" class="img">
+                <p class="tagline-txt4">Be exclusive, Be Devine, Be yourself.</p>
+            </div>
+        </div>
+        
+</div>
+<script>
+    require([
+        'jquery',
+        'slick'
+    ], function ($) {
+        jQuery(document).ready(function () {
+            $('.fade').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                cssEase: 'linear'
+            });
+        });
+    });
+
+</script>

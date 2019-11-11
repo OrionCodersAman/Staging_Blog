@@ -1,0 +1,94 @@
+@head-color:#9c0865;
+@small-font-size:16px;
+@font-ows:"Oswald"sans-serif;
+@title-color:#ffff;
+.login-container{
+    display: grid !important;
+}
+
+.page-title-wrapper{
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    background-color: #1b0000;
+    .page-title{
+        font-family: @font-ows;
+        letter-spacing: 7px;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: @title-color;
+        @media (min-width: 320px)and (max-device-width : 767px){
+            font-size: 2rem;
+        }
+    }//page-title
+}//page-title-wrapper
+
+.columns {
+    padding-top: 5vh;
+    margin: auto !important;
+    width: 80% !important;
+    .block-title{
+        font-weight: 600;
+        font-size: 2.8rem !important;
+        letter-spacing: 2px;
+        color: @head-color;
+    }
+    .block-content{
+        p{
+            font-weight: bold;
+            color: #104202;
+            font-size: @small-font-size;}//p
+    }//block-content
+}//login-container
+.note{
+    font-weight: bold;
+    color: #104202;
+    font-size: @small-font-size;
+   }//block-content
+   .label{
+        padding: 6px 15px 10px 0;
+        text-align: left !important;
+        width: 25.8%;
+        box-sizing: border-box;
+        float: left !important;
+        font-size: @small-font-size;
+        color: @head-color;
+    }//label
+    .control{
+        .input-text{
+            border: 2px solid @head-color;
+            // border-radius: 14px;
+            font-size: 16px;
+            height: 44px;
+
+        }//input-text
+    }//control
+.actions-toolbar{  
+    margin-left: 0% !important;  
+    .primary{
+        background: @head-color !important;
+        border: 1px solid @head-color !important;
+        width: 15vw !important;
+        height: 3vw !important;
+        font-size: 2rem !important;
+        border-radius: 18px !important;
+    }//primary
+    .secondary{
+        background: #9c0865 !important;
+        border: none;
+        width: 15vw !important;
+        height: 3vw !important;
+        font-size: 2rem !important;
+        color: @title-color;
+        border-radius: 18px !important;
+        margin-left: 1vw;
+        font-weight: 700;
+        float: inherit;
+        .remind{
+            margin: 2vh !important;
+            color: @title-color !important;
+        }
+    }//secondary
+} //actions-toolbar 

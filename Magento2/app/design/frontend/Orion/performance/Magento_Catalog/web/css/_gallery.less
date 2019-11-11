@@ -1,0 +1,182 @@
+@font-mon:"Montserrat","Helvetica Neue",Arial,sans-serif;
+@font-osw:"Oswald",sans-serif;
+@font-Titillium: 'Titillium Web', 'Font Awesome 5 Free',sans-serif;
+@font-IBM: 'IBM Plex Mono', monospace;
+@saira:'Saira Stencil One', cursive;
+@content-bg-color:#496076;
+@color-bg:#c1f1dc;
+@font-open:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+.page-main{
+    background: #f7f7f7;
+    .page-title-wrapper{
+        padding-top: 20px;
+        margin: 0 auto;
+        text-align: center;
+        color: #000;
+        background-color: #1b0000;
+        .page-title{
+            display: inline-block;
+            font-family: @font-osw;
+            letter-spacing: 7px;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #ffff;
+        }
+    }
+    .columns{
+        .main{
+            width: 1180px !important;
+            margin: 0 auto;
+            padding-top: 3vh;
+            .product-info-main{
+                padding-top: 22% !important;
+                width: 37%;
+                font-family: @font-mon;
+                @media (min-width: 360px)and (max-device-width : 767px){
+                    width: 100%; 
+                    padding-top: 5% !important;
+                   .product-info-price{
+                        width: 90%;
+                        margin: 0 auto;
+                   }
+                   
+
+                   }
+                   
+                   .box-tocart{
+                        width: 90%;
+                        margin: 0 auto;
+                   }
+                   .product-addto-links{
+                        width: 90%;
+                        margin: auto;
+                   }
+                   .mailto{
+                        margin: 1vw 0 1vw 5vw;
+                        background: #2b1d1d;
+                        border: none;
+                        color: #fff;
+                        cursor: pointer;
+                        font-family: @font-open;
+                        font-weight: 700;
+                        padding: 1px 31px;
+                        font-size: 1.4rem;
+                        line-height: 1.6rem;
+                        box-sizing: border-box;
+                        vertical-align: middle;
+                        display: inline-block;
+                        text-decoration: none;
+                        border-radius: 3px;
+                   }
+                }
+            }
+            .product-add-form{
+                .box-tocart{
+                    .fieldset{
+                        .actions{
+                            .tocart{
+                                background: #9c0865;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .product-social-links{
+                text-align: left;
+                .product-addto-links{
+                    .towishlist{
+                        line-height: 2.2rem;
+                        padding: 5px 17px;
+                        font-size: 1.2rem;
+                        background: #2b1d1d;
+                        border: none;
+                        color: #fff;
+                    }
+                    .tocompare{
+                        line-height: 2.2rem;
+                        padding: 5px 17px;
+                        font-size: 1.2rem;
+                        background: #2b1d1d;
+                        border: none;
+                        color: #fff;
+                    }
+                }
+            }
+            .media{
+               // width: 100%;
+               box-shadow: 0px 0px 1px;
+            }
+            .info{
+                background: #ffd5d5;
+                font-family: 'Titillium Web', 'Font Awesome 5 Free',sans-serif;
+                font-weight: 700;
+                .data{
+                    .active{
+                        .switch{
+                            box-shadow: 0px -2px 0px;
+                        }
+                    }
+                    .item{
+                        .block-title{
+                            font-weight:600;
+                        }
+                        .data{
+                            a{
+                                background-color:black;
+                            }
+                        }
+                        .data:hover{
+                            box-shadow: 0px -2px 0px;
+                        }
+                    }
+                    .review-add{
+                        .review-form{
+                            max-width: 1000px;
+                            .review-form-actions{
+                                .actions-primary{
+                                    .primary{
+                                        border: none;
+                                        color: #fff;
+                                        background: #9c0865;
+                                    }
+                                }
+                            }
+                        } 
+                    }  
+                }
+            }
+            .upsell{
+                 .content{
+                    .product-items{
+                        .product-item{
+                            .product-item-info {
+                                box-shadow: 0px 0px 2px #888888;
+                                .product-item-details{
+                                    text-align: center;
+                                    background-color: #ffffff;
+                                }
+
+                            }
+                            .product-item-info:hover{
+                                box-shadow: 5px 12px 8px #888888;
+                                @media (min-width: 360px)and (max-device-width : 767px){
+                                    box-shadow: 0px 0px 2px #888;
+                                }
+
+                            }
+                        }
+                    }
+
+                 }
+                @media (min-width: 360px)and (max-device-width : 767px){
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+
+        }
+    }
+}
+

@@ -1,0 +1,153 @@
+@mnu_background_color: #fff;
+@cmn-txt-color:#fff;
+@background1:"back2.jpg";
+@background2:"on1.jpg";
+@image-path:"../images/slider/";
+@header-top: #000;
+@link-color: #3c3c3c;
+@font-mon:"Montserrat","Helvetica Neue",Arial,sans-serif;
+@font-osw:"Oswald",sans-serif;
+@font-Titillium: 'Titillium Web', 'Font Awesome 5 Free',sans-serif;
+@font-IBM: 'IBM Plex Mono', monospace;
+@saira:'Saira Stencil One', cursive;
+.page-main{
+	.page-title-wrapper{
+		padding-top: 20px;
+        margin: 0 auto;
+        text-align: center;
+        color: #000;
+        background-color: #022a56;
+        @media (min-width: 320px)and (max-device-width : 767px){
+            padding: 20px 0px 1px 0px;
+        }
+        .page-title{
+            font-family: "Oswald",sans-serif;
+            letter-spacing: 7px;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #ffff;
+            @media (min-width: 320px)and (max-device-width : 767px){
+                font-size: 2rem;
+            }
+        }
+	}
+ 	.columns{
+ 		padding-top: 5vh;
+ 		background-image: radial-gradient(#04499e 0%, #1862bc 32%, #0c3a6a 76%);
+        @media (min-width: 320px)and (max-device-width : 767px){
+            background-image:none;
+        }
+ 		.column.main{
+ 			width: 80%;
+     		margin: 0 auto;
+            .block-title{
+                color: white;
+                font-size: 2vw;
+            }
+             @media only screen and (max-width: 767px){
+                .block-title{
+                   font-size: 5vw;
+                }
+            }
+     		.form{
+     			min-width: 80% !important;
+			    width: 50%;
+			    margin: 0 auto;
+			    padding: 2vw;
+			    box-shadow: 0px 2px 6px #000;
+			    background: rgba(0,0,0,0.4);
+			    // border-radius: 5%;
+                @media (min-width: 320px)and (max-device-width : 767px){
+                    box-shadow: none;
+                    background: none;
+                }
+ 			    .fieldset{
+ 			    	color: #fff;
+                        @media (min-width: 320px)and (max-device-width : 767px){
+                        color: #000;
+                    }
+ 			    	.legend{
+ 			    		margin-left: 0;
+ 			    		font-size: 24px;
+ 			    		font-family: @font-osw;
+ 			    		letter-spacing: 2px;
+ 			    		font-weight: 600;
+ 			    		color: #ffffff;
+                        @media (min-width: 320px)and (max-device-width : 767px){
+                            color: #000;
+                        }
+ 			    	}
+ 			    	input[type="text"], input[type="password"], input[type="number"], input[type="email"]{
+ 			    		height: 50px;
+					    border: 0px;
+					    box-shadow: 0px 0px 2px;
+ 			    		font-size: 16px;
+ 			    		// border-radius: 25px;
+ 			    		padding-left: 1.5vw;
+ 			    	}
+ 			    	.control{
+ 			    		width: 100%;
+ 			    		.password-strength-meter{
+ 			    			background-color: #0d3767;
+                            @media (min-width: 320px)and (max-device-width : 767px){
+                                background-color:#f4f4f4;
+                            }
+ 			    		}
+ 			    	}
+ 			    	.label{
+ 			    		text-align: inherit;
+ 			    		width: 8vw;
+ 			    		color: #fff;
+                        @media (min-width: 320px)and (max-device-width : 767px){
+                            color:#000;
+                        }
+ 			    	}
+ 			    	.choice:before, .no-label:before{
+ 			    		width: 0px;
+ 			    	}
+ 			    }
+ 			    
+     		}
+            .login-container{
+                display: grid !important;
+                .block-content{
+                    p{
+                        color: white;
+                        font-size: 16px;
+                        @media (min-width: 320px)and (max-device-width : 767px){
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            .actions-toolbar{
+                margin-left: 0;
+                .primary{
+                    border-radius: 25px;
+                    height: 50px;
+                    width: 20vw;
+                    background: rgba(25, 121, 195,0);
+                    border: 1px solid #fff;
+                    @media (min-width: 320px)and (max-device-width : 767px){
+                        background: rgb(25, 121, 195);
+                        width: 100%;
+                        border: none;
+                    }
+                }
+                @media (min-width: 768px){
+                   .primary:hover{
+                        background: #fff;
+                        color: #0a2b51;
+                    } 
+                }
+                
+                .secondary{
+                    font-weight: normal;
+                    font-size: 16px;
+                    font-family: auto;
+                }
+            }
+ 		}
+ 	}	
+}
